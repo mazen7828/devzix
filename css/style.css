@@ -265,3 +265,5 @@ html[lang="ar"] .lang-btn[data-lang="ar"],html[lang="en"] .lang-btn[data-lang="e
 @media(max-width:479px){.lang-switch{height:38px}.lang-btn{padding:0 10px}}
 @media(prefers-reduced-motion:reduce){.lang-thumb{transition:none}}
 body:not(.light-mode) .lang-thumb{background:color-mix(in srgb,var(--accent-color) 90%,#000)}
+.member-anchor{position:relative;top:-100px;display:block;visibility:hidden;height:0;pointer-events:none}
+.team-card:target{outline:2px solid var(--accent-bright);outline-offset:4px;box-shadow:0 0 32px color-mix(in srgb,var(--accent-bright) 45%,transparent)}
