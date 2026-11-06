@@ -22,7 +22,7 @@
   const translations = {
     en: {
       heroEyebrow: 'INDEPENDENT TECHNOLOGY TEAM', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until the end of this month', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
-      heroDescription: 'A multidisciplinary team bringing full-stack craft, intelligent systems, and security together to build what’s next.',
+      heroDescription: 'A programming team for web design and development, AI, and cybersecurity—building secure digital experiences.',
       discipline1: 'Full-Stack Development', discipline2: 'Backend Engineering', discipline3: 'AI & Machine Learning', discipline4: 'Cybersecurity', meetLink: 'Meet the team',
       launchEyebrow: 'THE NEXT MILESTONE', launchTitle: 'Our portfolio is<br>almost ready.', launchDescription: 'A closer look at what we make, how we think, and where we’re headed.',
       days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter, at the close of this month.',
@@ -33,13 +33,13 @@
       members: [
         { id: 'mazen', name: 'Mazen Ahmed Badr', role: 'Full-Stack Developer', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'Mazen Ahmed Badr, Full-Stack Developer', skills: ['Modern Web Architecture & Frontend Engineering', 'RESTful APIs & Backend Integration', 'Database Management & State Handling', 'Performance Optimization & Responsive UI'] },
         { id: 'yassen', name: 'Yassen Sabry Elawamy', role: 'Back-End Developer', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'Yassen Sabry Elawamy, Back-End Developer', skills: ['Server-Side Architecture & API Development', 'Database Design & Query Optimization', 'Authentication & System Security', 'Microservices & Cloud Infrastructure'] },
-        { id: 'ahmed', name: 'Ahmed Helmy El-Attar', role: 'AI Developer & Machine Learning Engineer', age: 16, image: './assets/images/team/ahmed.jpg', webp: './assets/images/team/ahmed.webp', alt: 'Ahmed Helmy El-Attar, AI Developer', skills: ['Predictive AI & Dynamic Dispatch Algorithms', 'Machine Learning Model Deployment', 'Real-Time Data Processing & Telemetry', 'Neural Networks & Computer Vision'] },
-        { id: 'mai', name: 'Mai Magdy Mahmoud', role: 'Cybersecurity & Penetration Testing Engineer', age: 22, image: './assets/images/team/mai.jpg', webp: './assets/images/team/mai.webp', alt: 'Mai Magdy Mahmoud, Cybersecurity Engineer', skills: ['Penetration Testing & Vulnerability Assessment', 'Zero-Trust Network Architecture', 'Encrypted Protocols & System Hardening', 'Infrastructure Security & Threat Defense'] }
+        { id: 'ahmed', name: 'Ahmed Helmy Eletr', role: 'AI Developer & Machine Learning Engineer', age: 16, image: './assets/images/team/ahmed.png', webp: './assets/images/team/ahmed.webp', alt: 'Ahmed Helmy Eletr, AI Developer', skills: ['Predictive AI & Dynamic Dispatch Algorithms', 'Machine Learning Model Deployment', 'Real-Time Data Processing & Telemetry', 'Neural Networks & Computer Vision'] },
+        { id: 'mai', name: 'Mai Magdy Mahmoud', role: 'Cybersecurity & Penetration Testing Engineer', age: 22, image: './assets/images/team/mai.jpeg', webp: './assets/images/team/mai.webp', alt: 'Mai Magdy Mahmoud, Cybersecurity Engineer', skills: ['Penetration Testing & Vulnerability Assessment', 'Zero-Trust Network Architecture', 'Encrypted Protocols & System Hardening', 'Infrastructure Security & Threat Defense'] }
       ]
     },
     ar: {
       heroEyebrow: 'فريق تقني مستقل', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى نهاية هذا الشهر', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
-      heroDescription: 'فريق متعدد التخصصات يجمع بين تطوير الويب المتكامل والأنظمة الذكية والأمن لصناعة ما هو قادم.',
+      heroDescription: 'فريق برمجة وتصميم وتطوير مواقع، يعمل في الذكاء الاصطناعي والأمن السيبراني لبناء تجارب رقمية آمنة.',
       discipline1: 'تطوير الويب المتكامل', discipline2: 'هندسة الأنظمة الخلفية', discipline3: 'الذكاء الاصطناعي وتعلّم الآلة', discipline4: 'الأمن السيبراني', meetLink: 'تعرّف على الفريق',
       launchEyebrow: 'محطتنا القادمة', launchTitle: 'ملف أعمالنا<br>على وشك الوصول.', launchDescription: 'اكتشفوا ما نبنيه، وكيف نفكر، وإلى أين نتجه.',
       days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'فصل جديد يبدأ مع نهاية هذا الشهر.',
@@ -50,8 +50,8 @@
       members: [
         { id: 'mazen', name: 'Mazen Ahmed Badr', role: 'مطوّر ويب متكامل', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'Mazen Ahmed Badr، مطوّر ويب متكامل', skills: ['هندسة الويب الحديثة وتطوير الواجهات', 'واجهات RESTful والتكامل الخلفي', 'إدارة قواعد البيانات وحالة التطبيق', 'تحسين الأداء وتصميم واجهات متجاوبة'] },
         { id: 'yassen', name: 'Yassen Sabry Elawamy', role: 'مطوّر أنظمة خلفية', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'Yassen Sabry Elawamy، مطوّر أنظمة خلفية', skills: ['هندسة الخوادم وتطوير واجهات API', 'تصميم قواعد البيانات وتحسين الاستعلامات', 'المصادقة وأمن الأنظمة', 'الخدمات المصغرة والبنية السحابية'] },
-        { id: 'ahmed', name: 'Ahmed Helmy El-Attar', role: 'مطوّر ذكاء اصطناعي وتعلّم آلة', age: 16, image: './assets/images/team/ahmed.jpg', webp: './assets/images/team/ahmed.webp', alt: 'Ahmed Helmy El-Attar، مطوّر ذكاء اصطناعي', skills: ['الذكاء التنبؤي وخوارزميات التوجيه', 'نشر نماذج تعلّم الآلة', 'معالجة البيانات الفورية والقياس عن بُعد', 'الشبكات العصبية والرؤية الحاسوبية'] },
-        { id: 'mai', name: 'Mai Magdy Mahmoud', role: 'مهندسة أمن سيبراني واختبار اختراق', age: 22, image: './assets/images/team/mai.jpg', webp: './assets/images/team/mai.webp', alt: 'Mai Magdy Mahmoud، مهندسة أمن سيبراني', skills: ['اختبار الاختراق وتقييم الثغرات', 'بنية الشبكات القائمة على انعدام الثقة', 'البروتوكولات المشفرة وتحصين الأنظمة', 'أمن البنية التحتية والدفاع ضد التهديدات'] }
+        { id: 'ahmed', name: 'Ahmed Helmy Eletr', role: 'مطوّر ذكاء اصطناعي وتعلّم آلة', age: 16, image: './assets/images/team/ahmed.png', webp: './assets/images/team/ahmed.webp', alt: 'Ahmed Helmy Eletr، مطوّر ذكاء اصطناعي', skills: ['الذكاء التنبؤي وخوارزميات التوجيه', 'نشر نماذج تعلّم الآلة', 'معالجة البيانات الفورية والقياس عن بُعد', 'الشبكات العصبية والرؤية الحاسوبية'] },
+        { id: 'mai', name: 'Mai Magdy Mahmoud', role: 'مهندسة أمن سيبراني واختبار اختراق', age: 22, image: './assets/images/team/mai.jpeg', webp: './assets/images/team/mai.webp', alt: 'Mai Magdy Mahmoud، مهندسة أمن سيبراني', skills: ['اختبار الاختراق وتقييم الثغرات', 'بنية الشبكات القائمة على انعدام الثقة', 'البروتوكولات المشفرة وتحصين الأنظمة', 'أمن البنية التحتية والدفاع ضد التهديدات'] }
       ]
     }
   };
@@ -80,7 +80,7 @@
     card.dataset.member = member.id;
     card.setAttribute('aria-label', member.name + ', ' + member.role);
     card.innerHTML = '<img class="team-card-logo logo-light" src="./assets/images/logo-emblem-light.png" alt="Devzix logo" width="640" height="492"><img class="team-card-logo logo-dark" src="./assets/images/logo-emblem-dark.png" alt="Devzix logo" width="540" height="450">' +
-      '<div class="member-top"><div class="member-photo-wrap"><picture class="member-photo-picture"><source srcset="' + member.webp + '" type="image/webp"><img class="member-photo" src="' + member.image + '" alt="' + member.alt + '" width="400" height="400" decoding="async" fetchpriority="high" loading="eager"></picture><span class="orbit-track" aria-hidden="true"></span><span class="orbit-satellite" aria-hidden="true"></span><span class="member-role-icon">' + icons[member.id] + '</span></div></div>' +
+      '<div class="member-top"><div class="member-photo-wrap"><picture class="member-photo-picture">' + (member.webp ? '<source srcset="' + member.webp + '" type="image/webp">' : '') + '<img class="member-photo" src="' + member.image + '" alt="' + member.alt + '" width="400" height="400" decoding="async" fetchpriority="high" loading="eager"></picture><span class="orbit-track" aria-hidden="true"></span><span class="orbit-satellite" aria-hidden="true"></span><span class="member-role-icon">' + icons[member.id] + '</span></div></div>' +
       '<div class="member-head"><h3 class="member-name">' + member.name + '</h3><p class="member-title">' + member.role + '</p><span class="age-badge">' + ageIcon + '<span>' + words.age + ' ' + member.age + '</span></span></div>' +
       '<div class="card-divider"></div><h4 class="skills-title">' + words.skillsTitle + '</h4><ul class="skills-list">' + member.skills.map(function (skill) { return '<li>' + skill + '</li>'; }).join('') + '</ul>';
     return card;
