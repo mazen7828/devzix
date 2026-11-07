@@ -108,8 +108,8 @@
     });
     themeButton.setAttribute('aria-label', document.body.classList.contains('light-mode') ? words.themeDark : words.themeLight);
     document.title = language === 'ar'
-      ? 'مازن أحمد بكر (Dev Mazen) | فريق Devzix'
-      : 'Mazen Ahmed Bakr (Dev Mazen) | Devzix Team';
+      ? 'فريق Devzix | تعرّف على الفريق'
+      : 'Devzix Team | Meet the Team';
     grid.replaceChildren.apply(grid, words.members.map(function (member, index) { return makeCard(member, index, words); }));
     observeReveals();
     savePreference('devzix-language', language);
