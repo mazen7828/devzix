@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/images/
+Allow: /assets/images/team/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /assets/images/team/
+
+User-agent: Googlebot-Favicon
+Allow: /
+
+Sitemap: https://www.devzix.com/sitemap.xml

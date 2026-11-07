@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.devzix.com/</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <!-- Yassen Sabry Elawamy -->
@@ -17,16 +17,16 @@
       <image:title>Yassen Sabry Elawamy (ياسين صبري العوامي) - Devzix</image:title>
       <image:caption>ياسين صبري العوامي - مطور باينوكس والشاطر وموربيدو وترياق جو</image:caption>
     </image:image>
-    <!-- Mazen Ahmed Badr -->
+    <!-- Mazen Ahmed Bakr -->
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
-      <image:title>Mazen Ahmed Badr - Frontend Developer of Teryaq Go &amp; Al Shater Academy | مازن احمد بدر</image:title>
-      <image:caption>Mazen Ahmed Badr (مازن احمد بدر) - Full-Stack Developer at Devzix</image:caption>
+      <image:title>Mazen Ahmed Bakr (Dev Mazen) - Frontend Developer of Teryaq Go &amp; Al Shater Academy | مازن أحمد بكر</image:title>
+      <image:caption>Mazen Ahmed Bakr (Dev Mazen, مازن أحمد بكر) - Full-Stack Developer at Devzix</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/mazen.jpg</image:loc>
-      <image:title>Mazen Ahmed Badr (مازن احمد بدر) - Devzix</image:title>
-      <image:caption>مازن احمد بدر - مطور فرونت إند في ترياق جو وأكاديمية الشاطر</image:caption>
+      <image:title>Mazen Ahmed Bakr (Dev Mazen, مازن أحمد بكر) - Devzix</image:title>
+      <image:caption>مازن أحمد بكر - مطور فرونت إند في ترياق جو وأكاديمية الشاطر</image:caption>
     </image:image>
     <!-- Ahmed Helmy Eletr -->
     <image:image>
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://www.devzix.com/#team</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -79,7 +79,7 @@
     </image:image>
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
-      <image:title>Mazen Ahmed Badr | مازن احمد بدر</image:title>
+      <image:title>Mazen Ahmed Bakr (Dev Mazen) | مازن أحمد بكر</image:title>
       <image:caption>Frontend Developer of Teryaq Go &amp; Al Shater Academy</image:caption>
     </image:image>
     <image:image>
