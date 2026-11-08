@@ -73,6 +73,16 @@
     try { window.localStorage.setItem(key, value); } catch (error) { /* The page still works when storage is unavailable. */ }
   }
   let language = readPreference('devzix-language') === 'ar' ? 'ar' : 'en';
+  const memberOrder = translations.en.members.map(function (member) { return member.id; });
+  for (let index = memberOrder.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [memberOrder[index], memberOrder[randomIndex]] = [memberOrder[randomIndex], memberOrder[index]];
+  }
+  const serializedMemberOrder = memberOrder.join(',');
+  if (serializedMemberOrder === readPreference('devzix-team-order')) {
+    memberOrder.push(memberOrder.shift());
+  }
+  savePreference('devzix-team-order', memberOrder.join(','));
 
   function makeCard(member, index, words) {
     const card = document.createElement('article');
@@ -110,7 +120,10 @@
     document.title = language === 'ar'
       ? 'فريق Devzix | تعرّف على الفريق'
       : 'Devzix Team | Meet the Team';
-    grid.replaceChildren.apply(grid, words.members.map(function (member, index) { return makeCard(member, index, words); }));
+    const orderedMembers = words.members.slice().sort(function (first, second) {
+      return memberOrder.indexOf(first.id) - memberOrder.indexOf(second.id);
+    });
+    grid.replaceChildren.apply(grid, orderedMembers.map(function (member, index) { return makeCard(member, index, words); }));
     observeReveals();
     savePreference('devzix-language', language);
   }
