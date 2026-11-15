@@ -1,25 +1,7 @@
 (function () {
   'use strict';
 
-  // ترتيب أعضاء الفريق: عشوائي مع كل ريفريش / دخول للموقع (ثابت أثناء تبديل اللغة)
-  // لو عاوز ترتيب ثابت: خلّي RANDOM_TEAM_ORDER = false وعدّل TEAM_ORDER
-  const RANDOM_TEAM_ORDER = true;
-  const TEAM_ORDER = ['yassen', 'maya', 'mazen', 'ahmed'];
-  if (RANDOM_TEAM_ORDER) {
-    // 50% احتمال إن ياسين يبقى آخر واحد، و50% احتمال إن مازن يبقى أول واحد (مستقلين عن بعض)
-    const yassenLast = Math.random() < 0.5;
-    const mazenFirst = Math.random() < 0.5;
-    const shuffle = function (arr) {
-      for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        const tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
-      }
-    };
-    do { shuffle(TEAM_ORDER); } while (
-      (TEAM_ORDER[TEAM_ORDER.length - 1] === 'yassen') !== yassenLast ||
-      (TEAM_ORDER[0] === 'mazen') !== mazenFirst
-    );
-  }
+  const TEAM_ORDER = ['mazen', 'ahmed', 'yassen', 'maya'];
 
   const intro = document.getElementById('intro');
   const introThemeToggle = document.getElementById('intro-theme-toggle');
