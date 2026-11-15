@@ -6,6 +6,29 @@
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <!-- Mazen Ahmed Badr -->
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
+      <image:title>Mazen Ahmed Badr - Frontend Developer of Teryaq Go &amp; Al Shater Academy | مازن احمد بدر</image:title>
+      <image:caption>Mazen Ahmed Badr (مازن احمد بدر) - Full-Stack Developer at Devzix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/mazen.jpg</image:loc>
+      <image:title>Mazen Ahmed Badr (مازن احمد بدر) - Devzix</image:title>
+      <image:caption>مازن احمد بدر - مطور فرونت إند في ترياق جو وأكاديمية الشاطر</image:caption>
+    </image:image>
+    <!-- Ahmed Helmy Eletr -->
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/ahmed.webp</image:loc>
+      <image:title>Ahmed Helmy Eletr - Creator of MindBot AI | احمد حلمي العتر</image:title>
+      <image:caption>Ahmed Helmy Eletr (احمد حلمي العتر) - AI &amp; Machine Learning Engineer at Devzix</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/ahmed.png</image:loc>
+      <image:title>Ahmed Helmy Eletr (احمد حلمي العتر) - Devzix</image:title>
+      <image:caption>احمد حلمي العتر - مطور منصة MindBot AI للذكاء الاصطناعي</image:caption>
+    </image:image>
+    
     <!-- Yassen Sabry Elawamy -->
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
@@ -33,28 +56,6 @@
       <image:title>Maya Magdy Mahmoud - Cybersecurity Engineer | مايا مجدي محمود</image:title>
       <image:caption>Maya Magdy Mahmoud / مايا مجدي محمود - Devzix</image:caption>
     </image:image>
-    <!-- Mazen Ahmed Badr -->
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
-      <image:title>Mazen Ahmed Badr - Frontend Developer of Teryaq Go &amp; Al Shater Academy | مازن احمد بدر</image:title>
-      <image:caption>Mazen Ahmed Badr (مازن احمد بدر) - Full-Stack Developer at Devzix</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/mazen.jpg</image:loc>
-      <image:title>Mazen Ahmed Badr (مازن احمد بدر) - Devzix</image:title>
-      <image:caption>مازن احمد بدر - مطور فرونت إند في ترياق جو وأكاديمية الشاطر</image:caption>
-    </image:image>
-    <!-- Ahmed Helmy Eletr -->
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/ahmed.webp</image:loc>
-      <image:title>Ahmed Helmy Eletr - Creator of MindBot AI | احمد حلمي العتر</image:title>
-      <image:caption>Ahmed Helmy Eletr (احمد حلمي العتر) - AI &amp; Machine Learning Engineer at Devzix</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/ahmed.png</image:loc>
-      <image:title>Ahmed Helmy Eletr (احمد حلمي العتر) - Devzix</image:title>
-      <image:caption>احمد حلمي العتر - مطور منصة MindBot AI للذكاء الاصطناعي</image:caption>
-    </image:image>
     <!-- Devzix Logos -->
     <image:image>
       <image:loc>https://www.devzix.com/android-chrome-512x512.png</image:loc>
@@ -77,16 +78,7 @@
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
-      <image:title>Yassen Sabry Elawamy | ياسين صبري العوامي</image:title>
-      <image:caption>Creator of PyNox, Al Shater Academy &amp; Morbido Bed</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/maya.webp</image:loc>
-      <image:title>Maya Magdy Mahmoud | مايا مجدي محمود</image:title>
-      <image:caption>Lead Cybersecurity Engineer &amp; Key Member</image:caption>
-    </image:image>
+    
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
       <image:title>Mazen Ahmed Badr | مازن احمد بدر</image:title>
@@ -96,6 +88,16 @@
       <image:loc>https://www.devzix.com/assets/images/team/ahmed.webp</image:loc>
       <image:title>Ahmed Helmy Eletr | احمد حلمي العتر</image:title>
       <image:caption>Creator of MindBot AI</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
+      <image:title>Yassen Sabry Elawamy | ياسين صبري العوامي</image:title>
+      <image:caption>Creator of PyNox, Al Shater Academy &amp; Morbido Bed</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/maya.webp</image:loc>
+      <image:title>Maya Magdy Mahmoud | مايا مجدي محمود</image:title>
+      <image:caption>Lead Cybersecurity Engineer &amp; Key Member</image:caption>
     </image:image>
   </url>
   <url>
