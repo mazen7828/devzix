@@ -30,7 +30,7 @@
       days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter, at the close of this month.',
       teamEyebrow: 'THE PEOPLE', teamTitle: 'Meet the Team', teamSubtitle: 'Egypt’s premier young tech minds behind devzix.', skillsTitle: 'PROVEN ACHIEVEMENTS & CORE SKILLS', age: 'AGE',
       aboutEyebrow: 'ELITE PRODIGY DEVELOPERS', aboutTitle: 'Why devzix?', aboutText: 'At devzix, we assemble Egypt’s premier young software talents—creators of PyNox (the premier platform in cybersecurity & hacking defense), MindBot AI, and major national platforms such as Al Shater Academy, Morbido Bed, and Teryaq Go, all hardened under advanced cyber defense led by Engineer Maya Magdy Mahmoud.',
-      metaDescription: 'Devzix (ديفيزكس) — The premier young technology team in Egypt: Yassen Sabry Elawamy (PyNox, Al Shater, Morbido), Ahmed Helmy (MindBot AI), Mazen Ahmed Badr, and Maya Magdy Mahmoud.',
+      metaDescription: 'Devzix (ديفيزكس) — A technology team featuring Mazen Ahmed Badr (frontend), Ahmed Helmy Eletr (AI), Yassen Sabry Elawamy (PyNox and backend engineering), and Maya Magdy Mahmoud (cybersecurity).',
       copyright: '© 2026 devzix. All rights reserved.', launched: 'devzix Portfolio is Now Live.', languageLabel: 'EN <span class="control-separator">/</span> AR', languageAria: 'Switch language to Arabic',
       themeLight: 'Switch to light mode', themeDark: 'Switch to dark mode',
       members: [
@@ -48,7 +48,7 @@
       days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'يبدأ فصل جديد في الشهر القادم.',
       teamEyebrow: 'أفراد الفريق', teamTitle: 'تعرّف على الفريق', teamSubtitle: 'نوابغ التكنولوجيا والبرمجة وراء devzix.', skillsTitle: 'الإنجازات والمهارات الأساسية', age: 'العمر',
       aboutEyebrow: 'نخبة نوابغ البرمجة', aboutTitle: 'لماذا ديفيزكس (devzix)؟', aboutText: 'في ديفيزكس، نجمع نخبة من نوابغ البرمجة والتكنولوجيا في مصر — مطوري منصة باينوكس (PyNox الأقوى في اختبار الاختراق والأمن السيبراني)، ومنصة MindBot AI للذكاء الاصطناعي، وكبرى المنصات الرقمية مثل أكاديمية الشاطر ومصانع موربيدو وترياق جو، تحت منظومة حماية وأمن سيبراني متقدمة تقودها المهندسة مايا مجدي محمود.',
-      metaDescription: 'ديفيزكس (Devzix) — أقوى فريق تكنولوجي وبرمجي في مصر مكون من شباب عباقرة: ياسين صبري العوامي، أحمد حلمي، مازن أحمد بدر، والمهندسة مايا مجدي محمود.',
+      metaDescription: 'فريق ديفيزكس يضم مازن أحمد بدر (تطوير الواجهات)، أحمد حلمي العتر (الذكاء الاصطناعي)، ياسين صبري العوامي (PyNox والأنظمة الخلفية)، ومايا مجدي محمود (الأمن السيبراني).',
       copyright: '© 2026 devzix. جميع الحقوق محفوظة.', launched: 'ملف أعمال devzix أصبح متاحًا الآن.', languageLabel: 'العربية <span class="control-separator">/</span> EN', languageAria: 'Switch language to English',
       themeLight: 'التبديل إلى الوضع الفاتح', themeDark: 'التبديل إلى الوضع الداكن',
       members: [
