@@ -144,12 +144,13 @@
   });
   themeButton.addEventListener('click', function () { applyTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light'); });
 
-  // The portfolio milestone is set to the final second of the current calendar month.
-  function getMonthEnd() {
+  // The portfolio milestone is set one day after the current calendar month ends.
+  function getCountdownTarget() {
     const now = new Date();
-    return new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
+    const monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
+    return new Date(monthEnd.getTime() + 86400000);
   }
-  const countdownTarget = getMonthEnd();
+  const countdownTarget = getCountdownTarget();
   function updateCountdown() {
     const remaining = countdownTarget.getTime() - Date.now();
     if (remaining <= 0) {
