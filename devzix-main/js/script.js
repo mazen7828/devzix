@@ -56,6 +56,20 @@
     }
   };
 
+  function getMemberOrder(members) {
+    const preferredFirst = Math.random() < 0.8 ? ['mazen', 'yassen'] : ['ahmed', 'mai'];
+    const firstMember = preferredFirst[Math.floor(Math.random() * preferredFirst.length)];
+    const remaining = members.map(function (member) { return member.id; }).filter(function (id) { return id !== firstMember; });
+    for (let index = remaining.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1));
+      const current = remaining[index];
+      remaining[index] = remaining[randomIndex];
+      remaining[randomIndex] = current;
+    }
+    return [firstMember].concat(remaining);
+  }
+  const memberOrder = getMemberOrder(translations.en.members);
+
   const icons = {
     mazen: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     yassen: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="14" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 8h.01M7.5 17h.01m3-9h6m-6 9h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
@@ -108,7 +122,10 @@
     });
     themeButton.setAttribute('aria-label', document.body.classList.contains('light-mode') ? words.themeDark : words.themeLight);
     document.title = language === 'ar' ? 'devzix — الفريق' : 'devzix — Team';
-    grid.replaceChildren.apply(grid, words.members.map(function (member, index) { return makeCard(member, index, words); }));
+    const members = words.members.slice().sort(function (first, second) {
+      return memberOrder.indexOf(first.id) - memberOrder.indexOf(second.id);
+    });
+    grid.replaceChildren.apply(grid, members.map(function (member, index) { return makeCard(member, index, words); }));
     observeReveals();
     savePreference('devzix-language', language);
   }
