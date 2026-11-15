@@ -1,6 +1,26 @@
 (function () {
   'use strict';
 
+  // ترتيب أعضاء الفريق: عشوائي مع كل ريفريش / دخول للموقع (ثابت أثناء تبديل اللغة)
+  // لو عاوز ترتيب ثابت: خلّي RANDOM_TEAM_ORDER = false وعدّل TEAM_ORDER
+  const RANDOM_TEAM_ORDER = true;
+  const TEAM_ORDER = ['yassen', 'maya', 'mazen', 'ahmed'];
+  if (RANDOM_TEAM_ORDER) {
+    // 50% احتمال إن ياسين يبقى آخر واحد، و50% احتمال إن مازن يبقى أول واحد (مستقلين عن بعض)
+    const yassenLast = Math.random() < 0.5;
+    const mazenFirst = Math.random() < 0.5;
+    const shuffle = function (arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+      }
+    };
+    do { shuffle(TEAM_ORDER); } while (
+      (TEAM_ORDER[TEAM_ORDER.length - 1] === 'yassen') !== yassenLast ||
+      (TEAM_ORDER[0] === 'mazen') !== mazenFirst
+    );
+  }
+
   const intro = document.getElementById('intro');
   const introThemeToggle = document.getElementById('intro-theme-toggle');
   function setIntroTheme(theme) {
@@ -21,39 +41,39 @@
 
   const translations = {
     en: {
-      heroEyebrow: 'INDEPENDENT TECHNOLOGY TEAM', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until next month', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
-      heroDescription: 'A multidisciplinary team bringing full-stack craft, intelligent systems, and security together to build what’s next.',
+      heroEyebrow: 'EGYPT’S LEADING YOUTH TECH FORCE', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until launch', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
+      heroDescription: 'The most powerful tech team in Egypt, built by prodigy developers leading web architecture, AI, and cybersecurity.',
       discipline1: 'Full-Stack Development', discipline2: 'Backend Engineering', discipline3: 'AI & Machine Learning', discipline4: 'Cybersecurity', meetLink: 'Meet the team',
       launchEyebrow: 'THE NEXT MILESTONE', launchTitle: 'Our portfolio is<br>almost ready.', launchDescription: 'A closer look at what we make, how we think, and where we’re headed.',
-      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter begins next month.',
-      teamEyebrow: 'THE PEOPLE', teamTitle: 'Meet the Team', teamSubtitle: 'The people behind devzix.', skillsTitle: 'CORE SKILLS', age: 'AGE',
-      aboutEyebrow: 'BUILT AS ONE', aboutTitle: 'Why devzix?', aboutText: 'devzix is an independent programming team building web applications, backend systems, AI and machine-learning tools, and cybersecurity solutions. Meet the developers behind our programming projects and digital products.',
-      metaDescription: 'devzix is an independent programming team building web, backend, AI, and cybersecurity projects. Meet the developers behind our software solutions.',
+      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter, at the close of this month.',
+      teamEyebrow: 'THE PEOPLE', teamTitle: 'Meet the Team', teamSubtitle: 'Egypt’s premier young tech minds behind devzix.', skillsTitle: 'PROVEN ACHIEVEMENTS & CORE SKILLS', age: 'AGE',
+      aboutEyebrow: 'ELITE PRODIGY DEVELOPERS', aboutTitle: 'Why devzix?', aboutText: 'At devzix, we assemble Egypt’s premier young software talents—creators of PyNox (the premier platform in cybersecurity & hacking defense), MindBot AI, and major national platforms such as Al Shater Academy, Morbido Bed, and Teryaq Go, all hardened under advanced cyber defense led by Engineer Maya Magdy Mahmoud.',
+      metaDescription: 'Devzix (ديفيزكس) — The premier young technology team in Egypt: Yassen Sabry Elawamy (PyNox, Al Shater, Morbido), Ahmed Helmy (MindBot AI), Mazen Ahmed Badr, and Maya Magdy Mahmoud.',
       copyright: '© 2026 devzix. All rights reserved.', launched: 'devzix Portfolio is Now Live.', languageLabel: 'EN <span class="control-separator">/</span> AR', languageAria: 'Switch language to Arabic',
       themeLight: 'Switch to light mode', themeDark: 'Switch to dark mode',
       members: [
-        { id: 'mazen', name: 'Mazen Ahmed Bakr Badr', role: 'Full-Stack Developer', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'Mazen Ahmed Bakr Badr, Full-Stack Developer', skills: ['Modern Web Architecture & Frontend Engineering', 'RESTful APIs & Backend Integration', 'Database Management & State Handling', 'Performance Optimization & Responsive UI'] },
-        { id: 'yassen', name: 'Yassin Sabry Al Awamy', role: 'Back-End Developer', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'Yassin Sabry Al Awamy, Back-End Developer', skills: ['Server-Side Architecture & API Development', 'Database Design & Query Optimization', 'Authentication & System Security', 'Microservices & Cloud Infrastructure'] },
-        { id: 'ahmed', name: 'Ahmed Helmy Eletr', role: 'AI Developer & Machine Learning Engineer', age: 16, image: './assets/images/team/ahmed.png', alt: 'Ahmed Helmy Eletr, AI Developer', skills: ['Predictive AI & Dynamic Dispatch Algorithms', 'Machine Learning Model Deployment', 'Real-Time Data Processing & Telemetry', 'Neural Networks & Computer Vision'] },
-        { id: 'mai', name: 'Mai Magdy Mahmoud', role: 'Cybersecurity & Penetration Testing Engineer', age: 22, image: './assets/images/team/mai.jpeg', alt: 'Mai Magdy Mahmoud, Cybersecurity Engineer', skills: ['Penetration Testing & Vulnerability Assessment', 'Zero-Trust Network Architecture', 'Encrypted Protocols & System Hardening', 'Infrastructure Security & Threat Defense'] }
+        { id: 'yassen', name: 'Yassen Sabry Elawamy', role: 'Backend Architect & Tech Entrepreneur (Age 18)', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'Yassen Sabry Elawamy - Creator of PyNox, Al Shater Academy & Morbido Bed | ياسين صبري العوامي', skills: ['Creator of PyNox — The premier platform in cybersecurity & hacking defense', 'Architect & Developer of <a href="https://alshateracademy.com/" target="_blank" rel="noopener noreferrer">Al Shater Academy</a> educational platform', 'Lead Developer of <a href="https://morbido-bed.com/" target="_blank" rel="noopener noreferrer">Morbido Bed</a> luxury enterprise platform', 'Developer of Teryaq Go, Souq Al-Gomaa & Sadaqat Al-Gomaa initiatives'] },
+        { id: 'maya', name: 'Maya Magdy Mahmoud', role: 'Lead Cybersecurity & Penetration Testing Engineer (Key Member)', age: 22, image: './assets/images/team/maya.jpeg', webp: './assets/images/team/maya.webp', alt: 'Maya Magdy Mahmoud - Lead Cybersecurity Engineer & Key Member of Devzix | مايا مجدي محمود', skills: ['Primary pillar securing Devzix infrastructure & high-scale platforms', 'Advanced Penetration Testing & Zero-Day Vulnerability Assessment', 'Zero-Trust Network Architecture & Cryptographic Protocols', 'Threat Intelligence, Intrusion Defense & Critical System Hardening'] },
+        { id: 'mazen', name: 'Mazen Ahmed Badr', role: 'Full-Stack Developer & Frontend Architect', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'Mazen Ahmed Badr - Frontend Developer of Teryaq Go & Al Shater Academy | مازن احمد بدر', skills: ['Frontend Developer at Teryaq Go digital platform', 'UI/UX Engineering for <a href="https://alshateracademy.com/" target="_blank" rel="noopener noreferrer">Al Shater Academy</a> ecosystem', 'Modern Web Architecture, Responsive Systems & State Handling', 'RESTful APIs, Performance Tuning & Scalable Client Interfaces'] },
+        { id: 'ahmed', name: 'Ahmed Helmy Eletr', role: 'AI & Machine Learning Engineer', age: 16, image: './assets/images/team/ahmed.png', webp: './assets/images/team/ahmed.webp', alt: 'Ahmed Helmy Eletr - Creator of MindBot AI | احمد حلمي العتر', skills: ['Creator of <a href="https://mindbotai.pro/" target="_blank" rel="noopener noreferrer">MindBot AI</a> platform', 'Predictive AI & Dynamic Dispatch Algorithms', 'Deep Neural Networks, Computer Vision & NLP deployment', 'Real-Time Telemetry & Cloud-Native Model Pipelines'] }
       ]
     },
     ar: {
-      heroEyebrow: 'فريق تقني مستقل', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى الشهر القادم', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
-      heroDescription: 'فريق متعدد التخصصات يجمع بين تطوير الويب المتكامل والأنظمة الذكية والأمن لصناعة ما هو قادم.',
+      heroEyebrow: 'أقوى تيم برمجي في مصر', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى نهاية هذا الشهر', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
+      heroDescription: 'أقوى فريق برمجي وتكنولوجي في مصر يقوده شباب عباقرة رواد في تطوير كبرى المنصات الرقمية، الذكاء الاصطناعي، والأمن السيبراني.',
       discipline1: 'تطوير الويب المتكامل', discipline2: 'هندسة الأنظمة الخلفية', discipline3: 'الذكاء الاصطناعي وتعلّم الآلة', discipline4: 'الأمن السيبراني', meetLink: 'تعرّف على الفريق',
       launchEyebrow: 'محطتنا القادمة', launchTitle: 'ملف أعمالنا<br>على وشك الوصول.', launchDescription: 'اكتشفوا ما نبنيه، وكيف نفكر، وإلى أين نتجه.',
       days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'يبدأ فصل جديد في الشهر القادم.',
-      teamEyebrow: 'أفراد الفريق', teamTitle: 'تعرّف على الفريق', teamSubtitle: 'الأشخاص وراء devzix.', skillsTitle: 'المهارات الأساسية', age: 'العمر',
-      aboutEyebrow: 'فريق واحد، رؤية واحدة', aboutTitle: 'لماذا devzix؟', aboutText: 'ديفزيكس تيم برمجة مستقل يبني مواقع وتطبيقات وأنظمة خلفية وحلولًا في الذكاء الاصطناعي والأمن السيبراني. تعرّف على المبرمجين ومشاريع البرمجة التي يطوّرها الفريق.',
-      metaDescription: 'ديفزيكس تيم برمجة مستقل يطوّر مواقع وتطبيقات ومشاريع برمجية في الأنظمة الخلفية والذكاء الاصطناعي والأمن السيبراني.',
+      teamEyebrow: 'أفراد الفريق', teamTitle: 'تعرّف على الفريق', teamSubtitle: 'نوابغ التكنولوجيا والبرمجة وراء devzix.', skillsTitle: 'الإنجازات والمهارات الأساسية', age: 'العمر',
+      aboutEyebrow: 'نخبة نوابغ البرمجة', aboutTitle: 'لماذا ديفيزكس (devzix)؟', aboutText: 'في ديفيزكس، نجمع نخبة من نوابغ البرمجة والتكنولوجيا في مصر — مطوري منصة باينوكس (PyNox الأقوى في اختبار الاختراق والأمن السيبراني)، ومنصة MindBot AI للذكاء الاصطناعي، وكبرى المنصات الرقمية مثل أكاديمية الشاطر ومصانع موربيدو وترياق جو، تحت منظومة حماية وأمن سيبراني متقدمة تقودها المهندسة مايا مجدي محمود.',
+      metaDescription: 'ديفيزكس (Devzix) — أقوى فريق تكنولوجي وبرمجي في مصر مكون من شباب عباقرة: ياسين صبري العوامي، أحمد حلمي، مازن أحمد بدر، والمهندسة مايا مجدي محمود.',
       copyright: '© 2026 devzix. جميع الحقوق محفوظة.', launched: 'ملف أعمال devzix أصبح متاحًا الآن.', languageLabel: 'العربية <span class="control-separator">/</span> EN', languageAria: 'Switch language to English',
       themeLight: 'التبديل إلى الوضع الفاتح', themeDark: 'التبديل إلى الوضع الداكن',
       members: [
-        { id: 'mazen', name: 'مازن أحمد بكر بدر', role: 'مطوّر ويب متكامل', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'مازن أحمد بكر بدر، مطوّر ويب متكامل', skills: ['هندسة الويب الحديثة وتطوير الواجهات', 'واجهات RESTful والتكامل الخلفي', 'إدارة قواعد البيانات وحالة التطبيق', 'تحسين الأداء وتصميم واجهات متجاوبة'] },
-        { id: 'yassen', name: 'ياسين صبري العوامي', role: 'مطوّر أنظمة خلفية', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'ياسين صبري العوامي، مطوّر أنظمة خلفية', skills: ['هندسة الخوادم وتطوير واجهات API', 'تصميم قواعد البيانات وتحسين الاستعلامات', 'المصادقة وأمن الأنظمة', 'الخدمات المصغرة والبنية السحابية'] },
-        { id: 'ahmed', name: 'أحمد حلمي العتر', role: 'مطوّر ذكاء اصطناعي وتعلّم آلة', age: 16, image: './assets/images/team/ahmed.png', alt: 'أحمد حلمي العتر، مطوّر ذكاء اصطناعي', skills: ['الذكاء التنبؤي وخوارزميات التوجيه', 'نشر نماذج تعلّم الآلة', 'معالجة البيانات الفورية والقياس عن بُعد', 'الشبكات العصبية والرؤية الحاسوبية'] },
-        { id: 'mai', name: 'مي مجدي محمود', role: 'مهندسة أمن سيبراني واختبار اختراق', age: 22, image: './assets/images/team/mai.jpeg', alt: 'مي مجدي محمود، مهندسة أمن سيبراني', skills: ['اختبار الاختراق وتقييم الثغرات', 'بنية الشبكات القائمة على انعدام الثقة', 'البروتوكولات المشفرة وتحصين الأنظمة', 'أمن البنية التحتية والدفاع ضد التهديدات'] }
+        { id: 'yassen', name: 'ياسين صبري العوامي', role: 'مطور أنظمة خلفية ورائد أعمال (مطور باينوكس والشاطر وموربيدو)', age: 18, image: './assets/images/team/yassen.jpg', webp: './assets/images/team/yassen.webp', alt: 'ياسين صبري العوامي (Yassen Sabry Elawamy) - مطور باينوكس والشاطر وموربيدو', skills: ['مطور منصة باينوكس (PyNox) الأقوى في اختبار الاختراق والأمن السيبراني', 'مؤسس ومطور منصة وتطبيق <a href="https://alshateracademy.com/" target="_blank" rel="noopener noreferrer">أكاديمية الشاطر التعليمية</a>', 'المطور الرئيسي لمنصة وتطبيق مصانع <a href="https://morbido-bed.com/" target="_blank" rel="noopener noreferrer">موربيدو (Morbido Bed)</a> للمفروشات والمراتب', 'مطور منصة ترياق جو، سوق الجمعة، ومبادرة صدقة الجمعة'] },
+        { id: 'maya', name: 'مايا مجدي محمود', role: 'مهندسة أمن سيبراني واختبار اختراق (العضو الأهم)', age: 22, image: './assets/images/team/maya.jpeg', webp: './assets/images/team/maya.webp', alt: 'مايا مجدي محمود (Maya Magdy Mahmoud) - مهندسة الأمن السيبراني والعضو الأهم في Devzix', skills: ['العضو الأهم في حماية وتأمين بنية Devzix التحتية وكافة مشاريعها', 'اختبار الاختراق المتقدم وتقييم الثغرات الأمنية الحساسة', 'هندسة الشبكات الصفرية (Zero-Trust Network Architecture)', 'البروتوكولات المشفرة وتحصين الأنظمة والدفاع ضد التهديدات'] },
+        { id: 'mazen', name: 'مازن أحمد بدر', role: 'مطوّر واجهات وويب متكامل (ترياق جو وأكاديمية الشاطر)', age: 17, image: './assets/images/team/mazen.jpg', webp: './assets/images/team/mazen.webp', alt: 'مازن أحمد بدر (Mazen Ahmed Badr) - مطور فرونت إند في ترياق جو وأكاديمية الشاطر', skills: ['مطور فرونت إند في منصة ترياق جو (Teryaq Go)', 'مطور واجهات المستخدم في منصة <a href="https://alshateracademy.com/" target="_blank" rel="noopener noreferrer">أكاديمية الشاطر التعليمية</a>', 'هندسة واجهات الويب الحديثة والواجهات التفاعلية المتجاوبة', 'واجهات RESTful والتكامل السلس مع الأنظمة الخلفية'] },
+        { id: 'ahmed', name: 'أحمد حلمي العتر', role: 'مهندس ذكاء اصطناعي وتعلّم آلة (مطور MindBot AI)', age: 16, image: './assets/images/team/ahmed.png', webp: './assets/images/team/ahmed.webp', alt: 'أحمد حلمي العتر (Ahmed Helmy Eletr) - مطور منصة MindBot AI', skills: ['مطور منصة <a href="https://mindbotai.pro/" target="_blank" rel="noopener noreferrer">MindBot AI</a> الرائدة للذكاء الاصطناعي', 'نماذج التعلّم الآلي والذكاء التنبؤي وخوارزميات التوجيه الفوري', 'الشبكات العصبية العميقة والرؤية الحاسوبية ومعالجة البيانات', 'نشر النماذج الذكية السحابية والقياسات اللحظية'] }
       ]
     }
   };
@@ -62,6 +82,7 @@
     mazen: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     yassen: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="4" y="14" width="16" height="6" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 8h.01M7.5 17h.01m3-9h6m-6 9h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>',
     ahmed: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="2.5" stroke="currentColor" stroke-width="1.5"/><circle cx="5" cy="6" r="1.4" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="6" r="1.4" stroke="currentColor" stroke-width="1.5"/><circle cx="5" cy="18" r="1.4" stroke="currentColor" stroke-width="1.5"/><circle cx="19" cy="18" r="1.4" stroke="currentColor" stroke-width="1.5"/><path d="m7 7.4 3.2 2.7m6.8-2.7-3.2 2.7M7 16.6l3.2-2.7m6.8 2.7-3.2-2.7" stroke="currentColor" stroke-width="1.3"/></svg>',
+    maya: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5.3c0 4.7-3 7.8-7 9.7-4-1.9-7-5-7-9.7V6l7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
     mai: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 19 6v5.3c0 4.7-3 7.8-7 9.7-4-1.9-7-5-7-9.7V6l7-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   };
   const ageIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 20c.4-3.4 2.6-5.2 6.5-5.2s6.1 1.8 6.5 5.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>';
@@ -74,29 +95,22 @@
   function savePreference(key, value) {
     try { window.localStorage.setItem(key, value); } catch (error) { /* The page still works when storage is unavailable. */ }
   }
-  function createMemberOrder() {
-    const members = translations.en.members.map(function (member) { return member.id; });
-    for (let index = members.length - 1; index > 0; index -= 1) {
-      const randomIndex = Math.floor(Math.random() * (index + 1));
-      [members[index], members[randomIndex]] = [members[randomIndex], members[index]];
-    }
-    if (members.length > 1 && members.join(',') === readPreference('devzix-member-order')) {
-      [members[0], members[1]] = [members[1], members[0]];
-    }
-    savePreference('devzix-member-order', members.join(','));
-    return members;
-  }
-  const memberOrder = createMemberOrder();
   let language = readPreference('devzix-language') === 'ar' ? 'ar' : 'en';
 
   function makeCard(member, index, words) {
     const card = document.createElement('article');
     card.className = 'team-card';
+    card.id = member.id;
     card.dataset.member = member.id;
     card.setAttribute('aria-label', member.name + ', ' + member.role);
-    card.innerHTML = '<img class="team-card-logo logo-light" src="./assets/images/logo-emblem-light.png" alt="Devzix logo" width="640" height="492"><img class="team-card-logo logo-dark" src="./assets/images/logo-emblem-dark.png" alt="Devzix logo" width="540" height="450">' +
-      '<div class="member-top"><div class="member-photo-wrap"><picture class="member-photo-picture">' + (member.webp ? '<source srcset="' + member.webp + '" type="image/webp">' : '') + '<img class="member-photo" src="' + member.image + '" alt="' + member.alt + '" width="400" height="400" decoding="async" fetchpriority="high" loading="eager"></picture><span class="orbit-track" aria-hidden="true"></span><span class="orbit-satellite" aria-hidden="true"></span><span class="member-role-icon">' + icons[member.id] + '</span></div></div>' +
-      '<div class="member-head"><h3 class="member-name">' + member.name + '</h3><p class="member-title">' + member.role + '</p><span class="age-badge">' + ageIcon + '<span>' + words.age + ' ' + member.age + '</span></span></div>' +
+    card.setAttribute('itemscope', '');
+    card.setAttribute('itemtype', 'https://schema.org/Person');
+    card.innerHTML = '<span class="member-anchor" id="' + member.id + '-anchor"></span>' +
+      (member.id === 'maya' ? '<span class="member-anchor" id="mai-anchor"></span>' : '') +
+      '<img class="team-card-logo logo-light" src="./assets/images/logo-emblem-light.png" alt="Devzix logo" width="640" height="492">' +
+      '<img class="team-card-logo logo-dark" src="./assets/images/logo-emblem-dark.png" alt="Devzix logo" width="540" height="450">' +
+      '<div class="member-top"><div class="member-photo-wrap"><picture class="member-photo-picture">' + (member.webp ? '<source srcset="' + member.webp + '" type="image/webp">' : '') + '<img class="member-photo" itemprop="image" src="' + member.image + '" alt="' + member.alt + '" title="' + member.name + '" width="400" height="400" decoding="async" fetchpriority="high" loading="eager"></picture><span class="orbit-track" aria-hidden="true"></span><span class="orbit-satellite" aria-hidden="true"></span><span class="member-role-icon">' + (icons[member.id] || icons.maya) + '</span></div></div>' +
+      '<div class="member-head"><h3 class="member-name" itemprop="name">' + member.name + '</h3><p class="member-title" itemprop="jobTitle">' + member.role + '</p><span class="age-badge">' + ageIcon + '<span>' + words.age + ' ' + member.age + '</span></span></div>' +
       '<div class="card-divider"></div><h4 class="skills-title">' + words.skillsTitle + '</h4><ul class="skills-list">' + member.skills.map(function (skill) { return '<li>' + skill + '</li>'; }).join('') + '</ul>';
     return card;
   }
@@ -119,13 +133,18 @@
       button.setAttribute('aria-pressed', String(button.dataset.lang === language));
     });
     themeButton.setAttribute('aria-label', document.body.classList.contains('light-mode') ? words.themeDark : words.themeLight);
-    document.title = language === 'ar' ? 'devzix — فريق برمجة' : 'devzix — Programming Team';
-    document.querySelector('meta[name="description"]').setAttribute('content', words.metaDescription);
-    document.querySelector('meta[property="og:title"]').setAttribute('content', document.title);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', words.metaDescription);
-    const orderedMembers = words.members.slice().sort(function (a, b) {
-      return memberOrder.indexOf(a.id) - memberOrder.indexOf(b.id);
-    });
+    document.title = language === 'ar' ? 'Devzix (ديفيزكس) | أقوى تيم برمجي في مصر — ياسين صبري العوامي وفريق العباقرة' : 'Devzix Leading Programming Team in Egypt';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', words.metaDescription);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', document.title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', words.metaDescription);
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.setAttribute('content', document.title);
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.setAttribute('content', words.metaDescription);
+    const orderedMembers = words.members.slice().sort(function (a, b) { return TEAM_ORDER.indexOf(a.id) - TEAM_ORDER.indexOf(b.id); });
     grid.replaceChildren.apply(grid, orderedMembers.map(function (member, index) { return makeCard(member, index, words); }));
     observeReveals();
     savePreference('devzix-language', language);
@@ -147,10 +166,10 @@
   });
   themeButton.addEventListener('click', function () { applyTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light'); });
 
-  // The portfolio milestone is set one day after the end of the current month.
+  // The portfolio milestone is set to the final second of the current calendar month.
   function getMonthEnd() {
     const now = new Date();
-    return new Date(now.getFullYear(), now.getMonth() + 1, 1, 23, 59, 59, 999);
+    return new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
   }
   const countdownTarget = getMonthEnd();
   function updateCountdown() {
@@ -206,6 +225,7 @@
   applyLanguage(language);
   observeReveals();
   updateCountdown();
+
   window.setInterval(updateCountdown, 1000);
 
   const dismissIntro = function () {
