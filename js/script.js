@@ -21,11 +21,11 @@
 
   const translations = {
     en: {
-      heroEyebrow: 'INDEPENDENT TECHNOLOGY TEAM', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until one day after this month ends', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
+      heroEyebrow: 'INDEPENDENT TECHNOLOGY TEAM', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until next month', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
       heroDescription: 'A multidisciplinary team bringing full-stack craft, intelligent systems, and security together to build what’s next.',
       discipline1: 'Full-Stack Development', discipline2: 'Backend Engineering', discipline3: 'AI & Machine Learning', discipline4: 'Cybersecurity', meetLink: 'Meet the team',
       launchEyebrow: 'THE NEXT MILESTONE', launchTitle: 'Our portfolio is<br>almost ready.', launchDescription: 'A closer look at what we make, how we think, and where we’re headed.',
-      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter begins one day after this month ends.',
+      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter begins next month.',
       teamEyebrow: 'THE PEOPLE', teamTitle: 'Meet the Team', teamSubtitle: 'The people behind devzix.', skillsTitle: 'CORE SKILLS', age: 'AGE',
       aboutEyebrow: 'BUILT AS ONE', aboutTitle: 'Why devzix?', aboutText: 'devzix is an independent programming team building web applications, backend systems, AI and machine-learning tools, and cybersecurity solutions. Meet the developers behind our programming projects and digital products.',
       metaDescription: 'devzix is an independent programming team building web, backend, AI, and cybersecurity projects. Meet the developers behind our software solutions.',
@@ -39,11 +39,11 @@
       ]
     },
     ar: {
-      heroEyebrow: 'فريق تقني مستقل', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى اليوم التالي لنهاية هذا الشهر', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
+      heroEyebrow: 'فريق تقني مستقل', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى الشهر القادم', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
       heroDescription: 'فريق متعدد التخصصات يجمع بين تطوير الويب المتكامل والأنظمة الذكية والأمن لصناعة ما هو قادم.',
       discipline1: 'تطوير الويب المتكامل', discipline2: 'هندسة الأنظمة الخلفية', discipline3: 'الذكاء الاصطناعي وتعلّم الآلة', discipline4: 'الأمن السيبراني', meetLink: 'تعرّف على الفريق',
       launchEyebrow: 'محطتنا القادمة', launchTitle: 'ملف أعمالنا<br>على وشك الوصول.', launchDescription: 'اكتشفوا ما نبنيه، وكيف نفكر، وإلى أين نتجه.',
-      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'فصل جديد يبدأ بعد نهاية هذا الشهر بيوم.',
+      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'يبدأ فصل جديد في الشهر القادم.',
       teamEyebrow: 'أفراد الفريق', teamTitle: 'تعرّف على الفريق', teamSubtitle: 'الأشخاص وراء devzix.', skillsTitle: 'المهارات الأساسية', age: 'العمر',
       aboutEyebrow: 'فريق واحد، رؤية واحدة', aboutTitle: 'لماذا devzix؟', aboutText: 'ديفزيكس تيم برمجة مستقل يبني مواقع وتطبيقات وأنظمة خلفية وحلولًا في الذكاء الاصطناعي والأمن السيبراني. تعرّف على المبرمجين ومشاريع البرمجة التي يطوّرها الفريق.',
       metaDescription: 'ديفزيكس تيم برمجة مستقل يطوّر مواقع وتطبيقات ومشاريع برمجية في الأنظمة الخلفية والذكاء الاصطناعي والأمن السيبراني.',
@@ -131,12 +131,12 @@
   });
   themeButton.addEventListener('click', function () { applyTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light'); });
 
-  // The portfolio milestone is one day after the current calendar month ends.
+  // The portfolio milestone is set one day after the end of the current month.
   function getMonthEnd() {
     const now = new Date();
-    return new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59, 999);
+    return new Date(now.getFullYear(), now.getMonth() + 1, 1, 23, 59, 59, 999);
   }
-  const countdownTarget = new Date(getMonthEnd().getTime() + 24 * 60 * 60 * 1000);
+  const countdownTarget = getMonthEnd();
   function updateCountdown() {
     const remaining = countdownTarget.getTime() - Date.now();
     if (remaining <= 0) {
