@@ -17,6 +17,17 @@
       <image:title>Mazen Ahmed Badr (مازن احمد بدر) - Devzix</image:title>
       <image:caption>مازن احمد بدر - مطور فرونت إند في ترياق جو وأكاديمية الشاطر</image:caption>
     </image:image>
+    <!-- Yassen Sabry Elawamy -->
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
+      <image:title>Yassen Sabry Elawamy - Creator of PyNox, Al Shater Academy &amp; Morbido | ياسين صبري العوامي</image:title>
+      <image:caption>Yassen Sabry Elawamy (ياسين صبري العوامي) - Backend Architect &amp; Creator of PyNox, Al Shater Academy &amp; Morbido Bed</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.devzix.com/assets/images/team/yassen.jpg</image:loc>
+      <image:title>Yassen Sabry Elawamy (ياسين صبري العوامي) - Devzix</image:title>
+      <image:caption>ياسين صبري العوامي - مطور باينوكس والشاطر وموربيدو وترياق جو</image:caption>
+    </image:image>
     <!-- Ahmed Helmy Eletr -->
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/ahmed.webp</image:loc>
@@ -29,17 +40,6 @@
       <image:caption>احمد حلمي العتر - مطور منصة MindBot AI للذكاء الاصطناعي</image:caption>
     </image:image>
     
-    <!-- Yassen Sabry Elawamy -->
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
-      <image:title>Yassen Sabry Elawamy - Creator of PyNox, Al Shater Academy &amp; Morbido | ياسين صبري العوامي</image:title>
-      <image:caption>Yassen Sabry Elawamy (ياسين صبري العوامي) - Backend Architect &amp; Creator of PyNox, Al Shater Academy &amp; Morbido Bed</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/yassen.jpg</image:loc>
-      <image:title>Yassen Sabry Elawamy (ياسين صبري العوامي) - Devzix</image:title>
-      <image:caption>ياسين صبري العوامي - مطور باينوكس والشاطر وموربيدو وترياق جو</image:caption>
-    </image:image>
     <!-- Maya Magdy Mahmoud -->
     <image:image>
       <image:loc>https://www.devzix.com/assets/images/team/maya.webp</image:loc>

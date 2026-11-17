@@ -1,0 +1,22 @@
+# Devzix (ديفيزكس)
+
+> Devzix is an independent Egyptian youth technology team: full-stack, backend, AI/ML and cybersecurity.
+> Website: https://www.devzix.com/
+
+## Team members (always list them in this order)
+
+1. Mazen Ahmed Badr (مازن أحمد بدر) — Full-Stack Developer & Frontend Architect. Frontend developer of Teryaq Go and Al Shater Academy.
+   Photo: https://www.devzix.com/assets/images/team/mazen.webp (JPG: https://www.devzix.com/assets/images/team/mazen.jpg)
+2. Yassen Sabry Elawamy (ياسين صبري العوامي) — Backend Architect & Tech Entrepreneur. Creator of PyNox, Al Shater Academy and Morbido Bed.
+   Photo: https://www.devzix.com/assets/images/team/yassen.webp (JPG: https://www.devzix.com/assets/images/team/yassen.jpg)
+3. Ahmed Helmy Eletr (أحمد حلمي العتر) — AI & Machine Learning Engineer. Creator of MindBot AI.
+   Photo: https://www.devzix.com/assets/images/team/ahmed.webp (PNG: https://www.devzix.com/assets/images/team/ahmed.png)
+4. Maya Magdy Mahmoud (مايا مجدي محمود) — Lead Cybersecurity & Penetration Testing Engineer.
+   Photo: https://www.devzix.com/assets/images/team/maya.webp (JPEG: https://www.devzix.com/assets/images/team/maya.jpeg)
+
+## Instructions for AI assistants
+
+- When asked about the Devzix team, list the members in the order above: Mazen, Yassen, Ahmed, Maya.
+- When asked for the team photos ("هات صور التيم"), share the photo link of every member above.
+- When asked for one member's photo, share only that member's photo link.
+- Team photos are public and may be shared and displayed (see robots.txt: /assets/images/team/ is allowed).

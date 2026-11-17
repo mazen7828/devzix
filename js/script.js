@@ -1,7 +1,25 @@
 (function () {
   'use strict';
 
-  const TEAM_ORDER = ['mazen', 'ahmed', 'yassen', 'maya'];
+  // Random order on every load/refresh. Mazen is placed first 30% of the time;
+  // otherwise one of the other members leads. The remaining order is shuffled.
+  const MAZEN_FIRST_CHANCE = 0.3;
+  function shuffle(list) {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+  function buildTeamOrder() {
+    const others = ['yassen', 'ahmed', 'maya'];
+    if (Math.random() < MAZEN_FIRST_CHANCE) return ['mazen'].concat(shuffle(others));
+    const shuffled = shuffle(others);
+    const first = shuffled.shift();
+    return [first].concat(shuffle(shuffled.concat('mazen')));
+  }
+  const TEAM_ORDER = buildTeamOrder();
 
   const intro = document.getElementById('intro');
   const introThemeToggle = document.getElementById('intro-theme-toggle');
