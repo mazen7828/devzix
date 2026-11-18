@@ -2,6 +2,22 @@
 
 #intro .sub-title-large{word-spacing:.42em}
 @media(max-width:599px){#intro .sub-title-large{word-spacing:.58em}}
+.notify-logo{
+  position:absolute;
+  top:18px;
+  inset-inline-start:18px;
+  z-index:3;
+  width:42px;
+  height:auto;
+  object-fit:contain;
+  pointer-events:none;
+}
+.notify-logo.logo-dark{display:none}
+:root[data-intro-theme="dark"] .notify-logo.logo-light{display:none}
+:root[data-intro-theme="dark"] .notify-logo.logo-dark{display:block}
+@media(max-width:680px){
+  .notify-logo{top:14px;inset-inline-start:14px;width:34px}
+}
 
 /* devzix identity refresh — graphite, restrained violet, and soft lavender. */
 :root{color-scheme:dark;--bg-primary:#09090f;--bg-secondary:#11111b;--card-background:rgba(18,18,29,.9);--surface:#171722;--text-primary:#f5f5f7;--text-secondary:#a1a1aa;--text-muted:#777783;--border-color:rgba(167,139,250,.16);--border-strong:rgba(167,139,250,.25);--accent-color:#8b5cf6;--accent-bright:#a78bfa;--accent-soft:rgba(139,92,246,.15);--shadow:0 22px 70px rgba(0,0,0,.32);--header-bg:rgba(9,9,15,.82);--grid-line:rgba(167,139,250,.035);font-family:var(--font-body)}
