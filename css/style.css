@@ -268,3 +268,54 @@ body:not(.light-mode) .lang-thumb{background:color-mix(in srgb,var(--accent-colo
 .member-anchor{position:relative;top:-100px;display:block;visibility:hidden;height:0;pointer-events:none}
 .team-card:target{outline:2px solid var(--accent-bright);outline-offset:4px;box-shadow:0 0 32px color-mix(in srgb,var(--accent-bright) 45%,transparent)}
 
+/* Notification form */
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hp-field{position:absolute;left:-9999px;opacity:0;height:0;width:0;pointer-events:none}
+.notify{--g1:#8b5cf6;--g2:#a78bfa;--g3:#7040ce;position:relative;isolation:isolate;margin-top:34px;padding:48px;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1.1fr);gap:40px;align-items:center;background:radial-gradient(120% 140% at 0% 0%,rgba(139,92,246,.18),transparent 55%),radial-gradient(110% 120% at 100% 100%,rgba(112,64,206,.12),transparent 55%),var(--card-background);box-shadow:var(--shadow);border:1px solid var(--border-color)}
+.notify:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;padding:1.5px;background:linear-gradient(120deg,var(--g1),var(--g2),var(--g3),var(--g1));background-size:300% 300%;animation:notify-border 7s linear infinite;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.notify:after{content:"";position:absolute;z-index:-1;width:380px;height:380px;right:-120px;top:-150px;border-radius:50%;background:conic-gradient(from 0deg,var(--g1),var(--g2),var(--g3),var(--g1));filter:blur(90px);opacity:.28;animation:notify-spin 18s linear infinite}
+[dir="rtl"] .notify:after{right:auto;left:-120px}
+@keyframes notify-border{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+@keyframes notify-spin{to{transform:rotate(360deg)}}
+.notify-copy{min-width:0}
+.notify-copy .eyebrow{margin-bottom:14px;color:var(--text-muted)}
+.notify h2{margin:0;font:800 clamp(28px,3.6vw,42px)/1.15 var(--font-heading);letter-spacing:-.02em;color:var(--text-primary)}
+.notify-copy>p{margin:14px 0 0;color:var(--text-secondary);font-size:14px;line-height:1.9;max-width:440px}
+.notify-form{min-width:0;display:flex;flex-direction:column;gap:14px;padding:20px;border-radius:18px;background:var(--surface);border:1px solid var(--border-color);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.field{position:relative;min-width:0;border-radius:14px;padding:1px;background:var(--border-strong);transition:background .3s,box-shadow .3s,transform .3s}
+.field:focus-within{background:var(--accent-color);box-shadow:0 0 0 4px var(--accent-soft),0 10px 30px rgba(139,92,246,.16);transform:translateY(-1px)}
+.field-icon{position:absolute;inset-inline-start:15px;top:16px;width:20px;height:20px;color:var(--accent-bright);pointer-events:none;transition:color .25s,transform .25s;z-index:1}
+.field:focus-within .field-icon{color:var(--accent-bright);transform:scale(1.1)}
+.notify-input{display:block;width:100%;min-width:0;padding:15px 16px;padding-inline-start:46px;border:0;border-radius:13px;background:var(--bg-secondary);color:var(--text-primary);font:inherit;font-size:15px;line-height:1.5;transition:background .25s}
+.notify-input::placeholder{color:var(--text-muted);opacity:1}
+.notify-input:focus{outline:none;background:var(--surface)}
+textarea.notify-input{resize:vertical;min-height:104px;max-height:280px}
+.notify-btn{position:relative;overflow:hidden;width:100%;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 22px;border:1px solid var(--border-strong);border-radius:14px;background:var(--accent-color);color:#fff;font-weight:800;font-size:16px;letter-spacing:.01em;cursor:pointer;box-shadow:0 12px 28px rgba(139,92,246,.22),0 0 0 1px rgba(255,255,255,.08) inset;transition:transform .25s,box-shadow .25s,background .25s}
+.notify-btn:after{content:"→";font-size:19px;transition:transform .25s}
+[dir="rtl"] .notify-btn:after{content:"←"}
+.notify-btn:hover{transform:translateY(-3px);background:var(--accent-bright);box-shadow:0 16px 36px rgba(139,92,246,.30),0 0 0 1px rgba(255,255,255,.14) inset}
+.notify-btn:hover:after{transform:translateX(4px)}
+[dir="rtl"] .notify-btn:hover:after{transform:translateX(-4px)}
+.notify-btn:active{transform:translateY(-1px) scale(.99)}
+.notify-btn:disabled{opacity:.65;cursor:wait;transform:none}
+.notify-status:empty{display:none}
+.notify-status{margin:0;font-size:13px;font-weight:600;color:var(--text-secondary)}
+.notify-status.ok{color:#4ade80}
+.notify-status.err{color:#fb7185}
+body.light-mode .notify{background:radial-gradient(120% 140% at 0% 0%,rgba(139,92,246,.12),transparent 55%),radial-gradient(110% 120% at 100% 100%,rgba(112,64,206,.08),transparent 55%),var(--card-background);box-shadow:var(--shadow)}
+body.light-mode .notify h2{color:var(--text-primary);background:none}
+body.light-mode .notify-copy .eyebrow{color:var(--text-muted)}
+body.light-mode .notify-copy>p{color:var(--text-secondary)}
+body.light-mode .notify-form{background:var(--surface);border-color:var(--border-color)}
+body.light-mode .field{background:var(--border-strong)}
+body.light-mode .notify-input{background:var(--bg-secondary);color:var(--text-primary)}
+body.light-mode .notify-input:focus{background:var(--surface)}
+body.light-mode .notify-input::placeholder{color:var(--text-muted)}
+body.light-mode .notify-status{color:var(--text-secondary)}
+body.light-mode .notify-status.ok{color:#15803d}
+body.light-mode .notify-status.err{color:#be123c}
+@media(max-width:1000px){.notify{padding:38px 32px;gap:30px}}
+@media(max-width:680px){.notify{grid-template-columns:minmax(0,1fr);padding:28px 18px;gap:22px;margin-top:22px;border-radius:20px}.notify h2{font-size:30px}.notify-copy>p{font-size:13px}.notify-form{padding:16px}}
+@media(max-width:390px){.notify{width:calc(100% - 28px)}.notify-input{font-size:14px;padding-inline-start:42px}.field-icon{inset-inline-start:12px}}
+@media(prefers-reduced-motion:reduce){.notify:before,.notify:after{animation:none}}
+
