@@ -17,6 +17,7 @@
 :root[data-intro-theme="dark"] .notify-logo.logo-dark{display:block}
 @media(max-width:680px){
   .notify-logo{top:14px;inset-inline-start:14px;width:34px}
+  .notify-copy{padding-top:48px}
 }
 
 /* devzix identity refresh — graphite, restrained violet, and soft lavender. */
