@@ -49,8 +49,8 @@
       discipline1: 'Full-Stack Development', discipline2: 'Backend Engineering', discipline3: 'AI & Machine Learning', discipline4: 'Cybersecurity', meetLink: 'Meet the team',
       launchEyebrow: 'THE NEXT MILESTONE', launchTitle: 'Our portfolio is<br>almost ready.', launchDescription: 'A closer look at what we make, how we think, and where we’re headed.',
       days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'A new chapter, at the close of this month.',
-      notifyEyebrow: 'STAY IN THE LOOP', notifyTitle: 'Be the first to know<br>when we launch.', notifyDesc: 'Leave your email or phone number if you want a reminder on WhatsApp or by email when the portfolio goes live. You can also add an optional note.',
-      notifyEmailLabel: 'Your email (optional)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'Phone number (optional)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'Message (optional)', notifyMsgPh: 'Message (optional)', notifyBtn: 'Notify me',
+      notifyEyebrow: 'STAY IN THE LOOP', notifyTitle: 'Be the first to know<br>when we launch.', notifyDesc: 'Leave your name, email or phone number if you want a reminder on WhatsApp or by email when the portfolio goes live. You can also add an encouraging message.',
+      notifyNameLabel: 'Your name (optional)', notifyNamePh: 'Your name (optional)', notifyEmailLabel: 'Your email (optional)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'Phone number (optional)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'Encouraging message', notifyMsgPh: 'Write an encouraging message...', notifyBtn: 'Notify me',
       notifySending: 'Sending...', notifySuccess: 'Your message has been sent successfully.', notifyError: 'Could not send your message. Please try again.',
       teamEyebrow: 'THE PEOPLE', teamTitle: 'Meet the Team', teamSubtitle: 'Egypt’s premier young tech minds behind devzix.', skillsTitle: 'PROVEN ACHIEVEMENTS & CORE SKILLS', age: 'AGE',
       aboutEyebrow: 'ELITE PRODIGY DEVELOPERS', aboutTitle: 'Why devzix?', aboutText: 'At devzix, we assemble Egypt’s premier young software talents—creators of PyNox (the premier platform in cybersecurity & hacking defense), MindBot AI, and major national platforms such as Al Shater Academy, Morbido Bed, and Teryaq Go, all hardened under advanced cyber defense led by Engineer Maya Magdy Mahmoud.',
@@ -70,8 +70,8 @@
       discipline1: 'تطوير الويب المتكامل', discipline2: 'هندسة الأنظمة الخلفية', discipline3: 'الذكاء الاصطناعي وتعلّم الآلة', discipline4: 'الأمن السيبراني', meetLink: 'تعرّف على الفريق',
       launchEyebrow: 'محطتنا القادمة', launchTitle: 'ملف أعمالنا<br>على وشك الوصول.', launchDescription: 'اكتشفوا ما نبنيه، وكيف نفكر، وإلى أين نتجه.',
       days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'يبدأ فصل جديد في الشهر القادم.',
-      notifyEyebrow: 'ابقَ على اطلاع', notifyTitle: 'كن أول من يعرف<br>عندما ننطلق.', notifyDesc: 'اترك بريدك الإلكتروني أو رقم هاتفك فقط إذا أردت تذكيرًا عبر واتساب أو البريد الإلكتروني عند إطلاق ملف أعمالنا. يمكنك أيضًا إضافة رسالة اختيارية.',
-      notifyEmailLabel: 'بريدك الإلكتروني (اختياري)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'رقم الهاتف (اختياري)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'الرسالة (اختياري)', notifyMsgPh: 'رسالتك (اختياري)', notifyBtn: 'أعلمني',
+      notifyEyebrow: 'ابقَ على اطلاع', notifyTitle: 'كن أول من يعرف<br>عندما ننطلق.', notifyDesc: 'اترك اسمك وبريدك الإلكتروني أو رقم هاتفك إذا أردت تذكيرًا عبر واتساب أو البريد الإلكتروني عند إطلاق ملف أعمالنا. يمكنك أيضًا إضافة رسالة تشجيع ودعم.',
+      notifyNameLabel: 'اسمك (اختياري)', notifyNamePh: 'اسمك (اختياري)', notifyEmailLabel: 'بريدك الإلكتروني (اختياري)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'رقم الهاتف (اختياري)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'رسالة تشجيع', notifyMsgPh: 'اكتب رسالة تشجيع ودعم...', notifyBtn: 'أعلمني',
       notifySending: 'جارٍ الإرسال...', notifySuccess: 'تم إرسال رسالتك بنجاح.', notifyError: 'تعذر إرسال رسالتك. حاول مرة أخرى.',
       teamEyebrow: 'أفراد الفريق', teamTitle: 'تعرّف على الفريق', teamSubtitle: 'نوابغ التكنولوجيا والبرمجة وراء devzix.', skillsTitle: 'الإنجازات والمهارات الأساسية', age: 'العمر',
       aboutEyebrow: 'نخبة نوابغ البرمجة', aboutTitle: 'لماذا ديفيزكس (devzix)؟', aboutText: 'في ديفيزكس، نجمع نخبة من نوابغ البرمجة والتكنولوجيا في مصر — مطوري منصة باينوكس (PyNox الأقوى في اختبار الاختراق والأمن السيبراني)، ومنصة MindBot AI للذكاء الاصطناعي، وكبرى المنصات الرقمية مثل أكاديمية الشاطر ومصانع موربيدو وترياق جو، تحت منظومة حماية وأمن سيبراني متقدمة تقودها المهندسة مايا مجدي محمود.',
@@ -278,8 +278,8 @@
       window.setTimeout(function () {
         intro.remove();
         document.body.style.overflow = '';
-      }, 700);
-    }, 3300);
+      }, 300);
+    }, 1800);
   };
   const startIntroAfterFonts = function () {
     const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready.catch(function () {}) : Promise.resolve();

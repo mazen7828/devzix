@@ -538,32 +538,32 @@
 
       /* Class Bindings */
       #intro .glass-container {
-        animation: intro-glassPillEntrance 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-glassPillEntrance 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .glass-body {
-        animation: intro-glassPillExpand 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-glassPillExpand 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .glass-inner {
-        animation: intro-glassInnerExpand 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-glassInnerExpand 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .bracket-left {
-        animation: intro-leftBracketSlide 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-leftBracketSlide 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .slash-item {
-        animation: intro-slashSlide 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-slashSlide 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .bracket-right {
-        animation: intro-rightBracketSlide 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-rightBracketSlide 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .text-clean-wipe {
-        animation: intro-textRevealClean 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-textRevealClean 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
       #intro .sub-title-large {
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 42px;
         font-weight: 700;
         fill: var(--intro-sub-color);
-        animation: intro-appleSubtitleSequence 6.4s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+        animation: intro-appleSubtitleSequence 2.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
       }
     </style>
   </defs>
@@ -715,15 +715,17 @@
       <div class="notify-copy">
         <div class="eyebrow"><span data-i18n="notifyEyebrow">STAY IN THE LOOP</span></div>
         <h2 id="notifyTitle" data-i18n="notifyTitle">Be the first to know<br>when we launch.</h2>
-        <p data-i18n="notifyDesc">Leave your email or phone number if you want a reminder on WhatsApp or by email when the portfolio goes live. You can also add an optional note.</p>
+        <p data-i18n="notifyDesc">Leave your name, email or phone number if you want a reminder on WhatsApp or by email when the portfolio goes live. You can also add an encouraging message.</p>
       </div>
       <form class="notify-form" id="notifyForm" action="https://formspree.io/f/xyewwlla" method="POST" novalidate>
+        <label class="sr-only" for="notifyName" data-i18n="notifyNameLabel">Your name (optional)</label>
+        <div class="field"><svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.7"/><path d="M5.5 20c.4-3.4 2.6-5.2 6.5-5.2s6.1 1.8 6.5 5.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><input class="notify-input" type="text" id="notifyName" name="name" autocomplete="name" maxlength="100" placeholder="Your name (optional)" data-i18n-placeholder="notifyNamePh"></div>
         <label class="sr-only" for="notifyEmail" data-i18n="notifyEmailLabel">Your email (optional)</label>
         <div class="field"><svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="notify-input" type="email" id="notifyEmail" name="email" autocomplete="email" dir="ltr" placeholder="you@example.com" data-i18n-placeholder="notifyEmailPh"></div>
         <label class="sr-only" for="notifyPhone" data-i18n="notifyPhoneLabel">Phone number (optional)</label>
         <div class="field"><svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.2 3.5h3l1.2 4-2.1 1.7a15.5 15.5 0 0 0 5.5 5.5l1.7-2.1 4 1.2v3c0 1.5-1.2 2.7-2.7 2.7A16.3 16.3 0 0 1 4.5 6.2c0-1.5 1.2-2.7 2.7-2.7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><input class="notify-input" type="tel" id="notifyPhone" name="phone" autocomplete="tel" inputmode="tel" maxlength="24" dir="ltr" placeholder="+20 1XXXXXXXXX" data-i18n-placeholder="notifyPhonePh"></div>
-        <label class="sr-only" for="notifyMessage" data-i18n="notifyMsgLabel">Message (optional)</label>
-        <div class="field field-area"><svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-7l-4 3.5V16H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><textarea class="notify-input" id="notifyMessage" name="message" rows="3" maxlength="1000" placeholder="Message (optional)" data-i18n-placeholder="notifyMsgPh"></textarea></div>
+        <label class="sr-only" for="notifyMessage" data-i18n="notifyMsgLabel">Encouraging message</label>
+        <div class="field field-area"><svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-7l-4 3.5V16H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><textarea class="notify-input" id="notifyMessage" name="message" rows="3" maxlength="1000" placeholder="Write an encouraging message..." data-i18n-placeholder="notifyMsgPh"></textarea></div>
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
         <button class="notify-btn" type="submit" id="notifyBtn" data-i18n="notifyBtn">Notify me</button>
         <p class="notify-status" id="notifyStatus" role="status" aria-live="polite"></p>
