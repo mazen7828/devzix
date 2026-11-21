@@ -1,6 +1,13 @@
 (function () {
   'use strict';
 
+  const LAUNCH_DATE = '2027-01-01';
+  const LAUNCH_DATE_PARTS = LAUNCH_DATE.split('-').map(Number);
+  const LAUNCH_YEAR = LAUNCH_DATE_PARTS[0];
+  const LAUNCH_MONTH = LAUNCH_DATE_PARTS[1];
+  const LAUNCH_DAY = LAUNCH_DATE_PARTS[2];
+  const LAUNCH_SHORT_DATE = LAUNCH_DAY + '/' + LAUNCH_MONTH + '/' + LAUNCH_YEAR;
+
   // Absolute image URLs so AI assistants (Gemini in Chrome, ChatGPT, ...) can display the photos.
   const SITE = /(^|\.)devzix\.com$/.test(location.hostname) ? location.origin : 'https://www.devzix.com';
 
@@ -44,11 +51,11 @@
 
   const translations = {
     en: {
-      heroEyebrow: 'EGYPT’S LEADING YOUTH TECH FORCE', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until the 2028 New Year opening', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
+      heroEyebrow: 'EGYPT’S LEADING YOUTH TECH FORCE', specialtiesLabel: 'Team disciplines', countdownLabel: 'Time until the 2027 New Year opening', tagFullstack: 'FULL-STACK', tagBackend: 'BACKEND', tagAi: 'AI / ML', tagSecurity: 'SECURITY', tagline: 'Building the Future, One Innovation at a Time.',
       heroDescription: 'The most powerful tech team in Egypt, built by prodigy developers leading web architecture, AI, and cybersecurity.',
       discipline1: 'Full-Stack Development', discipline2: 'Backend Engineering', discipline3: 'AI & Machine Learning', discipline4: 'Cybersecurity', meetLink: 'Meet the team',
       launchEyebrow: 'THE NEXT MILESTONE', launchTitle: 'Our portfolio is<br>almost ready.', launchDescription: 'A closer look at what we make, how we think, and where we’re headed.',
-      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'بدايه عام جديد مع devzix - 1/1/2028', apologyNotice: 'We apologize for postponing the website launch. The opening is on January 1, 2028, at the start of the New Year, after all projects are completed.',
+      days: 'DAYS', hours: 'HOURS', minutes: 'MINUTES', seconds: 'SECONDS', countdownNote: 'بدايه عام جديد مع devzix - 1/1/2027', apologyNotice: 'We apologize for postponing the website launch. The opening is on January 1, 2027, at the start of the New Year, after all projects are completed.',
       notifyEyebrow: 'STAY IN THE LOOP', notifyTitle: 'Be the first to know<br>when we launch.', notifyDesc: 'Leave your name, email or phone number if you want a reminder on WhatsApp or by email when the portfolio goes live. You can also add an encouraging message.',
       notifyNameLabel: 'Your name (optional)', notifyNamePh: 'Your name (optional)', notifyEmailLabel: 'Your email (optional)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'Phone number (optional)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'Encouraging message', notifyMsgPh: 'Write an encouraging message...', notifyBtn: 'Notify me',
       notifySending: 'Sending...', notifySuccess: 'Your message has been sent successfully.', notifyError: 'Could not send your message. Please try again.',
@@ -65,11 +72,11 @@
       ]
     },
     ar: {
-      heroEyebrow: 'أقوى تيم برمجي في مصر', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى افتتاح 2028', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
+      heroEyebrow: 'أقوى تيم برمجي في مصر', specialtiesLabel: 'تخصصات الفريق', countdownLabel: 'الوقت المتبقي حتى افتتاح 2027', tagFullstack: 'تطوير متكامل', tagBackend: 'أنظمة خلفية', tagAi: 'ذكاء اصطناعي', tagSecurity: 'أمن سيبراني', tagline: 'نبني المستقبل، ابتكارًا بعد ابتكار.',
       heroDescription: 'أقوى فريق برمجي وتكنولوجي في مصر يقوده شباب عباقرة رواد في تطوير كبرى المنصات الرقمية، الذكاء الاصطناعي، والأمن السيبراني.',
       discipline1: 'تطوير الويب المتكامل', discipline2: 'هندسة الأنظمة الخلفية', discipline3: 'الذكاء الاصطناعي وتعلّم الآلة', discipline4: 'الأمن السيبراني', meetLink: 'تعرّف على الفريق',
       launchEyebrow: 'محطتنا القادمة', launchTitle: 'ملف أعمالنا<br>على وشك الوصول.', launchDescription: 'اكتشفوا ما نبنيه، وكيف نفكر، وإلى أين نتجه.',
-      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'بدايه عام جديد مع devzix - 1/1/2028', apologyNotice: 'نعتذر عن تأجيل موعد عرض الموقع، وسنفتتحه يوم 1/1/2028 عند بداية العام الجديد بعد الانتهاء من جميع المشاريع.',
+      days: 'أيام', hours: 'ساعات', minutes: 'دقائق', seconds: 'ثوانٍ', countdownNote: 'بدايه عام جديد مع devzix - 1/1/2027', apologyNotice: 'نعتذر عن تأجيل موعد عرض الموقع، وسنفتتحه يوم 1/1/2027 عند بداية العام الجديد بعد الانتهاء من جميع المشاريع.',
       notifyEyebrow: 'ابقَ على اطلاع', notifyTitle: 'كن أول من يعرف<br>عندما ننطلق.', notifyDesc: 'اترك اسمك وبريدك الإلكتروني أو رقم هاتفك إذا أردت تذكيرًا عبر واتساب أو البريد الإلكتروني عند إطلاق ملف أعمالنا. يمكنك أيضًا إضافة رسالة تشجيع ودعم.',
       notifyNameLabel: 'اسمك (اختياري)', notifyNamePh: 'اسمك (اختياري)', notifyEmailLabel: 'بريدك الإلكتروني (اختياري)', notifyEmailPh: 'you@example.com', notifyPhoneLabel: 'رقم الهاتف (اختياري)', notifyPhonePh: '+20 1XXXXXXXXX', notifyMsgLabel: 'رسالة تشجيع', notifyMsgPh: 'اكتب رسالة تشجيع ودعم...', notifyBtn: 'أعلمني',
       notifySending: 'جارٍ الإرسال...', notifySuccess: 'تم إرسال رسالتك بنجاح.', notifyError: 'تعذر إرسال رسالتك. حاول مرة أخرى.',
@@ -179,9 +186,9 @@
   });
   themeButton.addEventListener('click', function () { applyTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light'); });
 
-  // Countdown to 00:00:00 on January 1, 2028.
+  // Countdown target derived from the central launch date.
   function getNewYearStart() {
-    return new Date(2028, 0, 1, 0, 0, 0, 0);
+    return new Date(LAUNCH_YEAR, LAUNCH_MONTH - 1, LAUNCH_DAY, 0, 0, 0, 0);
   }
   const countdownTarget = getNewYearStart();
   function updateCountdown() {
