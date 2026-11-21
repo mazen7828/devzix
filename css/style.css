@@ -218,6 +218,12 @@ body,p,a,button,input,small,label,nav,.hero-tagline,.hero-description,.hero-spec
 :root{--type-primary:#f0eef5;--type-secondary:#b7b3bf;--type-muted:#9d99a6;--type-accent:var(--accent-bright);--font-display:"Space Grotesk","Plus Jakarta Sans","IBM Plex Sans Arabic",sans-serif;--font-editorial:"DM Sans","Inter","IBM Plex Sans Arabic",sans-serif;--font-code:"IBM Plex Mono","IBM Plex Sans Arabic",monospace}
 body.light-mode{--type-primary:#201d26;--type-secondary:#56525f;--type-muted:#6b6874;--type-accent:var(--accent-bright)}
 body:not(.light-mode){--type-primary:#f0eef5;--type-secondary:#b7b3bf;--type-muted:#9d99a6;--type-accent:var(--accent-bright)}
+.apology-banner{position:relative;z-index:21;width:100%;border-bottom:1px solid rgba(139,215,255,.16);background:linear-gradient(90deg,rgba(34,91,134,.16),rgba(139,215,255,.08),rgba(34,91,134,.16));box-shadow:0 12px 36px rgba(0,0,0,.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.apology-banner__inner{width:min(calc(100% - 36px),1200px);min-height:52px;margin:auto;display:flex;align-items:center;justify-content:center;gap:11px;text-align:center}
+.apology-banner__icon{width:26px;height:26px;display:grid;place-items:center;flex:none;border:1px solid rgba(139,215,255,.42);border-radius:50%;color:var(--accent-bright);font:700 10px/1 var(--font-code);box-shadow:0 0 18px rgba(139,215,255,.12)}
+.apology-banner p{margin:0;color:var(--text-secondary);font-size:12px;font-weight:600;line-height:1.6}
+[dir="rtl"] .apology-banner p{font-family:var(--font-body)}
+@media(max-width:680px){.apology-banner__inner{min-height:58px;gap:9px;text-align:start}.apology-banner p{font-size:11px}}
 .hero,.launch{transition:color .3s ease}
 .hero .eyebrow,.launch .eyebrow{color:var(--type-muted);font:500 10px/1.45 var(--font-code);letter-spacing:.17em;transition:color .3s ease}
 .hero .status-dot{background:var(--type-accent);box-shadow:0 0 0 3px var(--accent-soft);transition:background-color .3s ease,box-shadow .3s ease}
