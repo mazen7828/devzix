@@ -44,4 +44,52 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: Applebot
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: Applebot-Extended
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: Google-CloudVertexBot
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: Bingbot-Image
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
+User-agent: DuckAssistBot
+Allow: /
+Allow: /llms.txt
+Allow: /team.json
+Allow: /assets/images/team/
+
 Sitemap: https://www.devzix.com/sitemap.xml

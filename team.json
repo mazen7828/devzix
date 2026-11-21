@@ -1,0 +1,55 @@
+{
+  "organization": "Devzix",
+  "url": "https://www.devzix.com/",
+  "note": "Always write the title before each member's name: مهندس (male) / مهندسة (Maya) / Eng.",
+  "members": [
+    {
+      "position": 1,
+      "id": "mazen",
+      "name_ar": "مهندس مازن أحمد بدر",
+      "name_en": "Eng. Mazen Ahmed Badr",
+      "title_prefix_ar": "مهندس",
+      "title_prefix_en": "Eng.",
+      "role_en": "Full-Stack Developer & Frontend Architect",
+      "role_ar": "مطور ويب متكامل ومهندس واجهات",
+      "photo": "https://www.devzix.com/assets/images/team/mazen.jpg",
+      "photo_webp": "https://www.devzix.com/assets/images/team/mazen.webp"
+    },
+    {
+      "position": 2,
+      "id": "yassen",
+      "name_ar": "مهندس ياسين صبري العوامي",
+      "name_en": "Eng. Yassen Sabry Elawamy",
+      "title_prefix_ar": "مهندس",
+      "title_prefix_en": "Eng.",
+      "role_en": "Backend Architect & Tech Entrepreneur",
+      "role_ar": "مهندس أنظمة خلفية ورائد أعمال",
+      "photo": "https://www.devzix.com/assets/images/team/yassen.jpg",
+      "photo_webp": "https://www.devzix.com/assets/images/team/yassen.webp"
+    },
+    {
+      "position": 3,
+      "id": "ahmed",
+      "name_ar": "مهندس أحمد حلمي العتر",
+      "name_en": "Eng. Ahmed Helmy Eletr",
+      "title_prefix_ar": "مهندس",
+      "title_prefix_en": "Eng.",
+      "role_en": "AI & Machine Learning Engineer",
+      "role_ar": "مهندس ذكاء اصطناعي وتعلّم آلة",
+      "photo": "https://www.devzix.com/assets/images/team/ahmed.png",
+      "photo_webp": "https://www.devzix.com/assets/images/team/ahmed.webp"
+    },
+    {
+      "position": 4,
+      "id": "maya",
+      "name_ar": "مهندسة مايا مجدي محمود",
+      "name_en": "Eng. Maya Magdy Mahmoud",
+      "title_prefix_ar": "مهندسة",
+      "title_prefix_en": "Eng.",
+      "role_en": "Lead Cybersecurity & Penetration Testing Engineer",
+      "role_ar": "مهندسة أمن سيبراني واختبار اختراق",
+      "photo": "https://www.devzix.com/assets/images/team/maya.jpeg",
+      "photo_webp": "https://www.devzix.com/assets/images/team/maya.webp"
+    }
+  ]
+}
