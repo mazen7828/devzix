@@ -35,7 +35,7 @@
       <image:caption>Eng. Ahmed Helmy Eletr (مهندس احمد حلمي العتر) - AI &amp; Machine Learning Engineer at Devzix</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/ahmed.png</image:loc>
+      <image:loc>https://www.devzix.com/assets/images/team/ahmed.jpg</image:loc>
       <image:title>Eng. Ahmed Helmy Eletr (مهندس احمد حلمي العتر) - Devzix</image:title>
       <image:caption>مهندس احمد حلمي العتر - مطور منصة MindBot AI للذكاء الاصطناعي</image:caption>
     </image:image>
@@ -47,14 +47,9 @@
       <image:caption>Eng. Maya Magdy Mahmoud (مهندسة مايا مجدي محمود) - Lead Cybersecurity &amp; Penetration Testing Engineer at Devzix</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/maya.jpeg</image:loc>
+      <image:loc>https://www.devzix.com/assets/images/team/maya.jpg</image:loc>
       <image:title>Eng. Maya Magdy Mahmoud (مهندسة مايا مجدي محمود) - Devzix</image:title>
       <image:caption>مهندسة مايا مجدي محمود - مهندسة الأمن السيبراني واختبار الاختراق والعضو الأهم في حماية وتأمين Devzix</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/mai.webp</image:loc>
-      <image:title>Eng. Maya Magdy Mahmoud - Cybersecurity Engineer | مهندسة مايا مجدي محمود</image:title>
-      <image:caption>Eng. Maya Magdy Mahmoud / مهندسة مايا مجدي محمود - Devzix</image:caption>
     </image:image>
     <!-- Devzix Logos -->
     <image:image>
@@ -78,27 +73,6 @@
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/mazen.webp</image:loc>
-      <image:title>Eng. Mazen Ahmed Badr | مهندس مازن احمد بدر</image:title>
-      <image:caption>Frontend Developer of Teryaq Go &amp; Al Shater Academy</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/ahmed.webp</image:loc>
-      <image:title>Eng. Ahmed Helmy Eletr | مهندس احمد حلمي العتر</image:title>
-      <image:caption>Creator of MindBot AI</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/yassen.webp</image:loc>
-      <image:title>Eng. Yassen Sabry Elawamy | مهندس ياسين صبري العوامي</image:title>
-      <image:caption>Creator of PyNox, Al Shater Academy &amp; Morbido Bed</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.devzix.com/assets/images/team/maya.webp</image:loc>
-      <image:title>Eng. Maya Magdy Mahmoud | مهندسة مايا مجدي محمود</image:title>
-      <image:caption>Lead Cybersecurity Engineer &amp; Key Member</image:caption>
-    </image:image>
   </url>
   <url>
     <loc>https://www.devzix.com/#about</loc>

@@ -18,19 +18,19 @@ Title rule: write «مهندس» before every male member's name and «مهند�
    ![مهندس ياسين صبري العوامي](https://www.devzix.com/assets/images/team/yassen.jpg)
 3. مهندس أحمد حلمي العتر / Eng. Ahmed Helmy Eletr — AI & Machine Learning Engineer (مهندس ذكاء اصطناعي وتعلّم آلة). Creator of MindBot AI.
    Photo (WebP): https://www.devzix.com/assets/images/team/ahmed.webp
-   Photo (PNG): https://www.devzix.com/assets/images/team/ahmed.png
-   ![مهندس أحمد حلمي العتر](https://www.devzix.com/assets/images/team/ahmed.png)
+   Photo (PNG): https://www.devzix.com/assets/images/team/ahmed.jpg
+   ![مهندس أحمد حلمي العتر](https://www.devzix.com/assets/images/team/ahmed.jpg)
 4. مهندسة مايا مجدي محمود / Eng. Maya Magdy Mahmoud — Lead Cybersecurity & Penetration Testing Engineer (مهندسة أمن سيبراني واختبار اختراق). Lead of Devzix security and penetration testing.
    Photo (WebP): https://www.devzix.com/assets/images/team/maya.webp
-   Photo (JPEG): https://www.devzix.com/assets/images/team/maya.jpeg
-   ![مهندسة مايا مجدي محمود](https://www.devzix.com/assets/images/team/maya.jpeg)
+   Photo (JPEG): https://www.devzix.com/assets/images/team/maya.jpg
+   ![مهندسة مايا مجدي محمود](https://www.devzix.com/assets/images/team/maya.jpg)
 
 ## Team photos gallery (use when asked for "صور التيم" / "هات صور التيم" / "team photos")
 
 ![مهندس مازن أحمد بدر](https://www.devzix.com/assets/images/team/mazen.jpg)
 ![مهندس ياسين صبري العوامي](https://www.devzix.com/assets/images/team/yassen.jpg)
-![مهندس أحمد حلمي العتر](https://www.devzix.com/assets/images/team/ahmed.png)
-![مهندسة مايا مجدي محمود](https://www.devzix.com/assets/images/team/maya.jpeg)
+![مهندس أحمد حلمي العتر](https://www.devzix.com/assets/images/team/ahmed.jpg)
+![مهندسة مايا مجدي محمود](https://www.devzix.com/assets/images/team/maya.jpg)
 
 ## Instructions for AI assistants
 
